@@ -12,16 +12,22 @@ body {
 :root {
     --primary-color: white;
     --secondary-color:pink;
+    --tertiary-color: lightcoral;
 }
+
 /* HEADER STYLE BEGIN */
 
 header {
     padding: 20px 35px;
+    background-color: var(--tertiary-color);
     color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    z-index: 99;
 }
 
 header h1 {
@@ -53,7 +59,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px; 
     font-weight: normal;
-    font-size: 1.55vw;
+    font-size: 30px;
 }
 
 header nav ul li a:hover {
@@ -77,15 +83,15 @@ header nav ul li a:hover {
 .intro a { 
     color: var(--primary-color);
     font-size: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     text-decoration: none;
 }
 
 .intro p {
+    padding: 10px 15px;
     text-align: center;
+    font-weight: normal;
     font-size: 30px;
-    padding-left: 20px;
-    padding-right: 20px
 }
 
 .intro a:hover {
@@ -127,6 +133,7 @@ header nav ul li a:hover {
 .project-img {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    margin-bottom: 50px;
 }
 
 .project-img:hover {
