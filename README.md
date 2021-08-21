@@ -19,3 +19,5 @@ Distributor Info: emackenziesmith@gmail.com
 GitHub: emackenziesmith
 
 ![alt text](./assets/images/challenge-screenshot-1.png)
+
+![alt text](./assets/images/challenge-screenshot-2.png)
