@@ -6,16 +6,18 @@
 
 body {
     font-family: Impact, fantasy;
-    color: white;
-    background-color: rgb(199, 160, 192);
+    background-image: url("./images/header-style.jpg");
 }
 
-/* ROOT GOES HERE */
-
+:root {
+    --primary-color: white;
+    --secondary-color:pink;
+}
 /* HEADER STYLE BEGIN */
 
 header {
     padding: 20px 35px;
+    color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -24,15 +26,14 @@ header {
 
 header h1 {
     font-weight: normal;
-    font-size: 26px;
+    font-size: 30px;
     margin: 0;
-    color: white;
     text-decoration: none;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 
@@ -55,13 +56,47 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 /* HEADER STYLE END */
+
+/* SUB HEADER STYLE BEGIN */
 
 .sub-header {
     font-size: 80px; 
+    color: var(--primary-color);
     text-align: center; 
-    margin: 0 auto 35px auto;
+    margin: 80px auto 35px auto;
 }
+
+.intro a { 
+    color: var(--primary-color);
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+.intro p {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.intro a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* COMBINED DECLARATIONS */
 
 .flex-row {
     display: flex;
@@ -71,8 +106,10 @@ header nav ul li a {
 
 .section-title {
     font-size: 50px;
+    color: var(--primary-color);
     border-bottom: 3px solid;
     padding-bottom: 20px; 
+    padding-top: 100px;
     text-align: center;
     margin: 0 auto 35px auto;
 }
@@ -83,10 +120,47 @@ header nav ul li a {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-around;
+    font-size: 30px;
+    color: var(--primary-color);
 }
 
-.sub-text {
-    display: flex;
-    margin: 0 auto 35px auto;
+.project-name {
+    padding: 20px auto;
     text-align: center;
+}
+
+section {
+    padding: 60px;
+}
+
+/* END COMBINED DECLARATIONS */
+
+.contact p {
+    margin: 0 auto 20px;
+    line-height: 1.5;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color:var(--primary-color);
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+.contact a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+footer {
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
 }
