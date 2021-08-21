@@ -77,14 +77,13 @@ header nav ul li a:hover {
 .intro a { 
     color: var(--primary-color);
     font-size: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     text-decoration: none;
 }
 
 .intro p {
     text-align: center;
     font-size: 30px;
-    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px
 }
@@ -96,12 +95,13 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* SUB HEADER STYLE END */
+
 /* COMBINED DECLARATIONS */
 
 .flex-row {
     display: flex;
     margin: 0 auto 45px auto;
-    text-align: center;
 }
 
 .section-title {
@@ -124,9 +124,35 @@ header nav ul li a:hover {
     color: var(--primary-color);
 }
 
+.project-img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.project-img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
 .project-name {
     padding: 20px auto;
     text-align: center;
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+.project-name a {
+    padding: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color) 
+}
+
+.project-name a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 section {
@@ -134,6 +160,8 @@ section {
 }
 
 /* END COMBINED DECLARATIONS */
+
+/* BEGIN CONTACT SECTION STYLE */
 
 .contact p {
     margin: 0 auto 20px;
@@ -155,6 +183,8 @@ section {
     border-radius: 15px;
     text-shadow: none;
 }
+
+/* END CONTACT SECTION STYLE */
 
 footer {
     width: 100%;
