@@ -18,5 +18,4 @@ Files included:
 Distributor Info: emackenziesmith@gmail.com
 GitHub: emackenziesmith
 
-! [alt text](./assets/images/challenge-screenshot-1.png "top half of finished site")
-! [alt text](./assets/images/challenge-screenshot-2.png "bottom half of finished site")
+![alt text](./assets/images/challenge-screenshot-1.png)
