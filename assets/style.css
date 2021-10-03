@@ -7,6 +7,7 @@
 body {
     font-family: Impact, fantasy;
     background-image: url("./images/header-style.jpg");
+    background-image: url("./images/background.jpg");
 }
 
 :root {
